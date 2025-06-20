@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* ממקם את כל התוכן במרכז אופקית */
+    align-items: center; /* ממקם את כל התוכן במרכז אנכית */
+    height: 100vh; /* מוודא שהתוכן נמצא בגובה מלא של המסך */
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-around; /* מסדר את הכפתורים באופן שווה */
+    align-items: center;
+    width: 100%; /* מוודא שהתפריט יימתח על כל רוחב המסך */
+    max-width: 800px; /* מגביל את הרוחב למקסימום של 800px */
+  }
+  
+  .btn {
+    background-color: #4CAF50; /* צבע רקע ירוק */
+    color: white;
+    border: none;
+    font-size: 32px; /* גודל טקסט גדול יותר */
+    padding: 30px 60px; /* padding גדול מאוד לכפתור גדול ונחמד */
+    border-radius: 12px; /* פינות מעוגלות יותר */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* השפעת hover ו-animation */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* הצללה נאה לכפתור */
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* שינוי צבע בעת hover */
+    transform: scale(1.1); /* גידול הכפתור בזמן hover */
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2); /* הצללה יותר בולטת בזמן hover */
+  }
+  
+  .btn:focus {
+    outline: none; /* מסיר את הקו המגע בעת קליק על הכפתור */
+  }
+  
+  .btn:active {
+    transform: scale(1.05); /* קטנה קלה בזמן לחיצה */
+  }
